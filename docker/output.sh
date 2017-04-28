@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -lt 1 ] ; then
-echo -e "\033[32m USAGE: $0 <image> <log> \033[0m"
+echo -e "\033[32m USAGE: $0 <container-wildcard> <log> \033[0m"
 echo -e "\033[32m e.g.:  $0 mds out \033[0m"
 exit 1;
 fi
