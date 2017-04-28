@@ -1,10 +1,10 @@
 #!/bin/bash
 if [ $# -eq 1 ] ; then
-key=$1
 path=.
+key=$1
 elif [ $# -eq 2 ] ; then
-path=$1
-key=$2
+key=$1
+path=$2
 else
 echo -e "USAGE: $0 <find-key> <path>"
 echo -e "USAGE: $0 <find-key>"
