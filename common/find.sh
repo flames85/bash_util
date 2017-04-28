@@ -1,4 +1,3 @@
-# 查找.cpp or .c or .h or .hpp文件中某字段
 #!/bin/bash
 
 if [ $# -lt 1 ] ; then
@@ -13,3 +12,7 @@ find $2 -name "*.[cChH]"  -o -name "*.[cC][pP][pP]" -o -name "*.[hH][pP][pP]" | 
 echo
 echo -ne "\033[33m *------------------------------------------------------end---line-------------------------------------------------------* \033[0m"
 echo
+
+
+# 查找.cpp or .c or .h or .hpp文件中某字段
+
