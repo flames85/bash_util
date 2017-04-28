@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$SHELL" = "/usr/bin/zsh" ];then
 RC_FILE=~/.zshrc
-elif [ "$SHELL" = "/usr/bash" ];then
+elif [ "$SHELL" = "/bin/bash" ];then
 RC_FILE=~/.bashrc
 else
 echo -e "\033[32m Unknow shell! Please configure manually \033[0m"
