@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 # custom definition
-add_on_head="127.0.0.1 $(hostname)\n\
-127.0.0.1 web\n\
-127.0.0.1 mds\n
+add_on_head="127.0.0.1       $(hostname)\n\
+192.168.29.10       k10\n\
+192.168.29.15       k15\n\
+192.168.29.16       k16\n\
+192.168.29.17       k17\n\
 0.0.0.0 account.jetbrains.com"
 
 echo -e "\033[31mcustom head is:\033[0m"
