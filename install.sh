@@ -4,7 +4,7 @@ RC_FILE=~/.zshrc
 elif [ "$SHELL" = "/bin/bash" ];then
 RC_FILE=~/.bashrc
 else
-echo -e "\033[32m Unknow shell! Please configure manually \033[0m"
+echo -e "\033[31m Unknow shell! Please configure manually \033[0m"
 exit 1;
 fi
 
