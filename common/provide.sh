@@ -17,7 +17,7 @@ echo
 if [[ $OS == "Ubuntu"* ]]; then
     apt-cache search $1
 else
-    yum provides $2
+    yum provides $1
 fi
 
 echo -ne "\033[33m *---------------------------------------------------------------------------------------------* \033[0m"
