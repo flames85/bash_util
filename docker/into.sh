@@ -1,4 +1,3 @@
-# into.sh
 #!/bin/bash
 if [ $# != 1 ] ; then
 echo -e "\033[32m USAGE: $0 <image> \033[0m"
