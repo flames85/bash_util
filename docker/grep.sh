@@ -12,7 +12,7 @@ echo -e "\033[31m container not exists which image=<$1> \033[0m"
 exit 1;
 fi
 
-docker logs $container | grep $2 --color -n -A 2 -B 2
+docker logs $container | grep $2 --color -n -A 10 -B 10
 
 
 # 直接打开容器日志
