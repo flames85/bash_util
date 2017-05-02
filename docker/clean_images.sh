@@ -1,12 +1,5 @@
 #!/bin/bash
-
-images=`docker images -f "dangling=true" -q`
-if [ -z $images ] ; then
-echo -e "\033[31m images not exists\033[0m"
-exit 1;
-fi
-
-docker rmi $(images) -f
+docker rmi $(docker images -f "dangling=true" -q) -f
 echo -e "\033[33m *-------------------------------------------------------------------------------------------------------------------------* \033[0m"
 docker images
 echo -e "\033[33m *-------------------------------------------------------------------------------------------------------------------------* \033[0m"
