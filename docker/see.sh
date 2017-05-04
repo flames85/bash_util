@@ -5,7 +5,7 @@ echo -e "\033[32m e.g.:  $0 mds \033[0m"
 exit 1;
 fi
 
-docker ps | grep $1 --color
+docker ps -a| grep $1 --color
 
 
 # 直接打开容器日志
