@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ $# != 2 ] ; then
 echo -e "\033[32m USAGE: $0 <container-wildcard> <keywords> \033[0m"
-echo -e "\033[32m e.g.:  $0 mds "call id" \033[0m"
+echo -e "\033[32m e.g.:  $0 mds \"call id\" \033[0m"
 exit 1;
 fi
 
