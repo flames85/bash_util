@@ -12,7 +12,7 @@ echo -e "\033[31m pod not exists which <pod-wildcard>=$1 \033[0m"
 exit 1;
 fi
 
-kubectl describe pods $container | grep Node
+kubectl describe pods $container | grep Node --color
 
 # 直接打开容器日志
 
