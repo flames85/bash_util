@@ -15,8 +15,9 @@ find . -name "*.sh" | xargs chmod +x
 # set path
 COMMON=$PWD/common
 DOCKER=$PWD/docker
+KUBECTL=$PWD/kubectl
 echo "#bash util path" >> $RC_FILE
-echo export PATH='$PATH':$COMMON:$DOCKER >> $RC_FILE
+echo export PATH='$PATH':$COMMON:$DOCKER:$KUBECTL >> $RC_FILE
 echo -e "\033[32m install success \033[0m"
 # new shell
 $SHELL

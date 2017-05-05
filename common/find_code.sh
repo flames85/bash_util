@@ -14,7 +14,7 @@ fi
 
 echo -e "\033[33m *-----------------------------------------------------start---line------------------------------------------------------* \033[0m"
 echo
-find $path -name "*.[cChH]"  -o -name "*.[cC][pP][pP]" -o -name "*.[hH][pP][pP]" | xargs grep --color -n $key
+find $path -name "*.[cChH]"  -o -name "*.[cC][pP][pP]" -o -name "*.[hH][pP][pP]" | xargs grep --color -n "$key"
 echo
 echo -e "\033[33m *------------------------------------------------------end---line-------------------------------------------------------* \033[0m"
 
