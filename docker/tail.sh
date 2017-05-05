@@ -12,8 +12,8 @@ echo -e "\033[31m container not exists which <container-wildcard>=$1 \033[0m"
 exit 1;
 fi
 
-docker logs $container | grep "$2" --color -n -A 10 -B 10
+docker logs -f --tail="10" $container | grep "$2" -A 5 -B 5
 
 
-# 直接打开容器日志筛选相应内容
+# 动态显示日志
 
