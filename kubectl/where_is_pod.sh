@@ -1,5 +1,5 @@
 if [ $# -eq 0 ] ; then
-echo -e "\033[32m USAGE: $0 <pod-wildcard> <match-plus> [-]\033[0m"
+echo -e "\033[32m USAGE: $0 <pod-wildcard> [-]\033[0m"
 echo -e "\033[32m e.g.:  $0 mds -\033[0m"
 echo -e "\033[32m e.g.:  $0 mds\033[0m"
 exit 1;
