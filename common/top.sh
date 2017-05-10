@@ -6,7 +6,8 @@ exit 1;
 fi
 
 # pid
-pid=`pgrep $1 | paste -sd"," -`
+#pid=`pgrep $1 | paste -sd"," -`
+pid=`ps -ef | grep -v "grep\|top.sh" | grep busy | awk '{print $2}' | paste -sd"," -`
 if [ -z "$pid" ] ; then
 echo -e "\033[31m pid not exists which <app-wildcard>=$1 \033[0m"
 exit 1;
