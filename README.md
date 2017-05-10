@@ -1,14 +1,13 @@
-#### linux下脚本
+### linux下便捷脚本
 
 #### 1. 部署
 
 ```bash
-git clone ssh://???@zentao.hyc.cn:29418/Personal/shaoqi/bash_util.git
 cd bash_util
 ./install
 ```
 
-#### 2. 主要介绍docker脚本
+#### 2. 主要docker脚本
 
 1. 进入某容器内部
 ```bash
@@ -49,4 +48,38 @@ start_dead_container.sh $container_id $new_image_name
 比如:
 ```bash
 start_dead_container.sh d3fc541b90bc crash_mds_01
+```
+
+6. 打开并筛选某个容器的日志
+```bash
+grep.sh mds "ERROR"
+```
+
+7. 实时打开并筛选某个容器的日志
+```bash
+tail.sh mds "ERROR"
+```
+####  2. 主要common脚本
+1. 搜索源码中某个字段
+```bash
+find_code.sh “some_func”
+```
+2. 更新host文件
+```bash
+update_hosts.sh
+```
+3. top筛选某进程
+```bash
+top.sh chrome
+```
+
+#### 3. 主要kubectl脚本
+1. 查看某pod所处的host位置或pod的详细信息
+host位置：
+```bash
+where_is_pod.sh tas
+```
+pod的详细信息:
+```bash
+where_is_pod.sh tas -
 ```
