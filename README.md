@@ -62,17 +62,21 @@ cd bash_util
 ####  2. 主要common脚本
 1. 搜索源码中某个字段
   ```bash
-  find_code.sh “some_func”
+  code_search.sh “some_func”
   ```
-2. 更新host文件
+2. 搜索文本文件中某个字段
+  ```bash
+  search.sh “some_text”
+  ```
+3. 更新host文件
   ```bash
   update_hosts.sh
   ```
-3. top筛选某进程
+4. top筛选某进程
   ```bash
   top.sh chrome
   ```
-4. ps筛选某进程
+5. ps筛选某进程
   显示内存cpu等信息：
   ```bash
   ps.sh mds
